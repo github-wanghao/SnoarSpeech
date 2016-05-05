@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCCCC"
+        android:id="@+id/weatherLiftSuggestion"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="舒适度指数："
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:id="@+id/liftSuggestionTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/liftSuggestionTitle"
+            android:layout_marginLeft="40px"
+            android:text="舒适"
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:id="@+id/liftSuggestionStatus"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/liftSuggestionTitle"
+            android:layout_marginTop="10px"
+            android:text="白天不太热也不太冷，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。"
+            android:textSize="32px"
+            android:textColor="#000000"
+            android:id="@+id/liftSuggestionText"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFCC"
+        android:layout_below="@+id/weatherLiftSuggestion"
+        android:id="@+id/weatherCarWashingSuggestion"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="洗车指数："
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:id="@+id/CarWashingSuggestionTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/CarWashingSuggestionTitle"
+            android:layout_marginLeft="40px"
+            android:text="较适宜"
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:id="@+id/CarWashingSuggestionStatus"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CarWashingSuggestionTitle"
+            android:layout_marginTop="10px"
+            android:text="较适宜洗车，未来一天无雨，风力较小，擦洗一新的汽车至少能保持一天。"
+            android:textSize="32px"
+            android:textColor="#000000"
+            android:id="@+id/CarWashingSuggestionText"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherCarWashingSuggestion"
+        android:background="#CCCCFF"
+        android:id="@+id/weatherClosthesSuggestionSuggestion"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="穿衣指数："
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:id="@+id/clothesSuggestionTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/clothesSuggestionTitle"
+            android:layout_marginLeft="40px"
+            android:text="较冷"
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:id="@+id/clothesSuggestionStatus"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clothesSuggestionTitle"
+            android:layout_marginTop="10px"
+            android:text="建议着厚外套加毛衣等服装。年老体弱者宜着大衣、呢外套加羊毛衫。"
+            android:textSize="32px"
+            android:textColor="#000000"
+            android:id="@+id/clothesSuggestionText"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherClosthesSuggestionSuggestion"
+        android:background="#CCFFFF"
+        android:id="@+id/weatherFluSuggestion"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="感冒指数："
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:id="@+id/fluSuggestionTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fluSuggestionTitle"
+            android:layout_marginLeft="40px"
+            android:text="较易发"
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:id="@+id/fluSuggestionStatus"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fluSuggestionTitle"
+            android:layout_marginTop="10px"
+            android:text="天气较凉，较易发生感冒，请适当增加衣服。体质较弱的朋友尤其应该注意防护。"
+            android:textSize="32px"
+            android:textColor="#000000"
+            android:id="@+id/fluSuggestionText"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherFluSuggestion"
+        android:background="#99CCFF"
+        android:id="@+id/weatherSportsSuggestion"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动指数："
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:id="@+id/sportsSuggestionTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sportsSuggestionTitle"
+            android:layout_marginLeft="40px"
+            android:text="较适宜"
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:id="@+id/sportsSuggestionStatus"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sportsSuggestionTitle"
+            android:layout_marginTop="10px"
+            android:text="阴天，较适宜进行各种户内外运动。"
+            android:textSize="32px"
+            android:textColor="#000000"
+            android:id="@+id/sportsSuggestionText"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherSportsSuggestion"
+        android:background="#CC99FF"
+        android:id="@+id/weatherTravSuggestion"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旅游指数："
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:id="@+id/travSuggestionTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/travSuggestionTitle"
+            android:layout_marginLeft="40px"
+            android:text="适宜"
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:id="@+id/travSuggestionStatus"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travSuggestionTitle"
+            android:layout_marginTop="10px"
+            android:text="天气较好，温度较高，天气较热，但有微风相伴，还是比较适宜旅游的，不过外出时要注意防暑防晒哦！"
+            android:textSize="32px"
+            android:textColor="#000000"
+            android:id="@+id/travSuggestionText"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherTravSuggestion"
+        android:background="#FF99CC"
+        android:id="@+id/weatherUltravioletRaysSuggestion"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="紫外线指数："
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:id="@+id/ultravioletRaysSuggestionTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ultravioletRaysSuggestionTitle"
+            android:layout_marginLeft="40px"
+            android:text="最弱"
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:id="@+id/ultravioletRaysSuggestionStatus"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ultravioletRaysSuggestionTitle"
+            android:layout_marginTop="10px"
+            android:text="属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。"
+            android:textSize="32px"
+            android:textColor="#000000"
+            android:id="@+id/ultravioletRaysSuggestionText"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

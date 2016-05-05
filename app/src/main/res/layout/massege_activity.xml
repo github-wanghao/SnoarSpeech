@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#CCC"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:background="#01579B"
+        android:id="@+id/RelativeLayout2"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="30px"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:background="#003399"
+            android:layout_centerVertical="true"
+            android:id="@+id/massegeReturnButton"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="添加"
+            android:textColor="#ffffff"
+            android:textSize="30px"
+            android:background="#FFCCCC"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:layout_centerVertical="true"
+            android:id="@+id/MassageAddButton"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发短信"
+            android:textColor="#ffffff"
+            android:textSize="30px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayout2"
+        android:layout_above="@+id/bottomLayout"
+        >
+        <include
+            android:id="@+id/massageView"
+            layout="@layout/massage_view" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomLayout">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id= "@+id/speak_bottombar"
+            >
+            <ImageButton
+                android:id = "@+id/voice_input"
+                android:layout_width = "wrap_content"
+                android:layout_height = "85.0dip"
+                android:padding="5.0dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/siri_button"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

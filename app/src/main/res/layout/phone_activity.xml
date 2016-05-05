@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#CCCCCC">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:background="#01579B"
+        android:id="@+id/phoneRelativeLayout1"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="25px"
+            android:background="#003399"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:layout_centerVertical="true"
+            android:id="@+id/phoneReturnButton"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="打电话"
+            android:textColor="#ffffff"
+            android:textSize="30px"
+            android:background="#FFCCCC"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:layout_centerVertical="true"
+            android:id="@+id/newCallButton"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打电话"
+            android:textColor="#ffffff"
+            android:textSize="30px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneRelativeLayout1"
+        android:layout_above="@+id/bottomLayout"
+        >
+        <include
+            android:id="@+id/phoneView"
+            layout="@layout/phone_view" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomLayout">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id= "@+id/speak_bottombar"
+            >
+            <ImageButton
+                android:id = "@+id/voice_input"
+                android:layout_width = "wrap_content"
+                android:layout_height = "85.0dip"
+                android:padding="5.0dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/siri_button"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

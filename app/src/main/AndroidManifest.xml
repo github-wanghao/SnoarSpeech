@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="example.snoarspeech"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="20"
+        tools:overrideLibrary="com.gc.materialdesign,com.andexert.expandablelayout.library"
+        />
+
+    <!-- 所需权限 -->
+    <!--连接网络权限，用于执行云端语音能力 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!--读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <!--读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!--读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!--打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- <uses-permission android:name="android.permission.GLOBAL_SEARCH" /> -->
+    <!--发短信权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!--编辑短信权限 -->
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <!--读取短信权限 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!--获取地理位置权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--获取设置闹钟权限  -->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <!--写入手机亮度权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" ></uses-permission>
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="8MUVD3C2NxfWI9GdnpD9B57mkQYZKVXQ" />  <!--http://lbsyun.baidu.com/apiconsole/key-->
+
+        <!-- meta-data需要写在application中 -->
+
+        <activity
+            android:name="example.snoarspeech.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="example.snoarspeech.LoadingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.PhoneActivity"
+            android:label="打电话" >
+            <intent-filter>
+                <action android:name="android.intent.action.PhoneActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PhoneCallActivity"
+            android:label="打电话" >
+            <intent-filter>
+                <action android:name="android.intent.action.PhoneCallActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.MassegeActivity"
+            android:label="发短信" >
+            <intent-filter>
+                <action android:name="android.intent.action.MassegeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MassageEditActivity"
+            android:label="发短信" >
+            <intent-filter>
+                <action android:name="android.intent.action.MassegeEditActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.NewsActivity"
+            android:label="查看新闻">
+            <intent-filter>
+                <action android:name="android.intent.action.NewsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.OfflineMassageEditActivity"
+            android:label="发短信">
+            <intent-filter>
+                <action android:name="android.intent.Sonarvoice.OfflineMassageEditActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="example.snoarspeech.activity.WeatherActivity"
+            android:label="查询天气">
+            <intent-filter>
+                <action android:name="android.intent.action.WeatherActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="example.snoarspeech.activity.WeatherChooseActivity"
+            android:label="选择地方">
+            <intent-filter>
+                <action android:name="android.intent.action.WeatherChooseActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="example.snoarspeech.activity.AlarmClockMainActivity"
+            android:label="调闹钟">
+            <intent-filter>
+                <action android:name="android.intent.action.AlarmClockMainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="example.snoarspeech.activity.AlarmClockSettingActivity"
+            android:label="设置闹钟">
+            <intent-filter>
+                <action android:name="android.intent.action.AlarmClockSettingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="example.snoarspeech.activity.AlarmActivity" />
+        <!-- android:process=":remote": 新开一个进程 -->
+        <receiver android:name="example.snoarspeech.service.AlarmReceiver" android:process=":remote"/>
+
+        <activity
+            android:name="example.snoarspeech.activity.RouteMapActivity"
+            android:label="地图">
+            <intent-filter>
+                <action android:name="android.intent.action.RouteMapActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

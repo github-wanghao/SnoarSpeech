@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="#CCCCFF"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarm_clock"
+        android:id="@+id/alarmClockIcon"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/alarmClockIcon"
+        android:layout_marginLeft="20dp"
+        android:text="闹钟"
+        android:textSize="70px"
+        android:id="@+id/alarmClockTitle"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/alarmClockIcon"
+        android:layout_below="@id/alarmClockTitle"
+        android:layout_marginTop="13px"
+        android:layout_marginLeft="20dp"
+        android:text="2016年4月21日 23:30"
+        android:textSize="47px"
+        android:id="@+id/alarmClockText"
+        />
+
+
+    <ToggleButton
+        android:id="@+id/mTogBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:button="@drawable/switch_btn"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+
+</RelativeLayout>

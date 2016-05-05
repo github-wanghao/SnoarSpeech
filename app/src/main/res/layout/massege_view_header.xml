@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:padding="10dp"
+        android:textSize="18px"
+        android:textColor="@android:color/white"
+        android:text="点击底部麦克风，说出联系人姓名和短信内容来快速发短信"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

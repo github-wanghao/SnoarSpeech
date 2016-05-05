@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="110dip"
+        android:layout_height="wrap_content"
+        android:background="#CCCCFF"
+        android:id="@+id/weatherSummaryRelativeLayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="今日"
+            android:textColor="#000000"
+            android:textSize="35px"
+            android:id="@+id/toady"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toady"
+            android:src="@drawable/weather100"
+            android:id="@+id/todayWeatherIcon"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="阵雨"
+            android:textColor="#000000"
+            android:textSize="35px"
+            android:id="@+id/todayWeather"
+            android:layout_below="@id/todayWeatherIcon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="23°/27°"
+            android:textColor="#000000"
+            android:textSize="30px"
+            android:id="@+id/toadyTemperature"
+            android:layout_below="@id/todayWeather"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="110dip"
+        android:layout_height="wrap_content"
+        android:background="#CCFFFF"
+        android:id="@+id/weatherSummaryRelativeLayout2"
+        android:layout_toRightOf="@id/weatherSummaryRelativeLayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="明日"
+            android:textColor="#000000"
+            android:textSize="35px"
+            android:id="@+id/tomorrow"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tomorrow"
+            android:src="@drawable/weather100"
+            android:id="@+id/tomorrowWeatherIcon"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="阵雨"
+            android:textColor="#000000"
+            android:textSize="35px"
+            android:id="@+id/tomorrowWeather"
+            android:layout_below="@id/tomorrowWeatherIcon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="23°/27°"
+            android:textColor="#000000"
+            android:textSize="30px"
+            android:id="@+id/tomorrowTemperature"
+            android:layout_below="@id/tomorrowWeather"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="110dip"
+        android:layout_height="wrap_content"
+        android:background="#CCCCFF"
+        android:id="@+id/weatherSummaryRelativeLayout3"
+        android:layout_toRightOf="@id/weatherSummaryRelativeLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="后日"
+            android:textColor="#000000"
+            android:textSize="35px"
+            android:id="@+id/dayAfterTomorrow"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dayAfterTomorrow"
+            android:src="@drawable/weather100"
+            android:id="@+id/dayAfterTomorrowWeatherIcon"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="阵雨"
+            android:textColor="#000000"
+            android:textSize="35px"
+            android:id="@+id/dayAfterTomorrowWeather"
+            android:layout_below="@id/dayAfterTomorrowWeatherIcon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="23°/27°"
+            android:textColor="#000000"
+            android:textSize="30px"
+            android:id="@+id/dayAfterTomorrowTemperature"
+            android:layout_below="@id/dayAfterTomorrowWeather"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

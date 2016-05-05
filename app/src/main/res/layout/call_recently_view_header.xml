@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:padding="10dp"
+        android:textSize="20px"
+        android:textColor="@android:color/white"
+        android:text="最近联系人"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

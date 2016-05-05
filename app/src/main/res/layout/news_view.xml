@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:background="#01579B"
+        android:id="@+id/phoneRelativeLayout1"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="25px"
+            android:background="#003399"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:layout_centerVertical="true"
+            android:id="@+id/phoneReturnButton"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看新闻"
+            android:textColor="#ffffff"
+            android:textSize="30px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:scrollingCache="false"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView_News"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

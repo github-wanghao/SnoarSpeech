@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmClockNameRelativeLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="闹铃名称："
+            android:textSize="20dp"
+            android:id="@+id/alarmClockNameTextView"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="闹钟1"
+            android:layout_toRightOf="@id/alarmClockNameTextView"
+            android:id="@+id/alarmClockNameEditText"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alarmClockNameRelativeLayout"
+        android:id="@+id/alarmClockTimeRelativeLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="闹铃时间："
+            android:textSize="20dp"
+            android:id="@+id/alarmClockTimeTextView"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:text=""
+            android:layout_toRightOf="@id/alarmClockTimeTextView"
+            android:id="@+id/alarmClockTEditText"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alarmClockTimeRelativeLayout"
+        android:id="@+id/alarmClockRepetitionRelativeLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="重复设置："
+            android:textSize="20dp"
+            android:id="@+id/alarmClockRepetitionTextView"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:layout_toRightOf="@id/alarmClockRepetitionTextView"
+            android:id="@+id/alarmClockRepetitionEditText"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alarmClockRepetitionRelativeLayout"
+        android:id="@+id/alarmClockMemorandumRelativeLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="备忘录："
+            android:textSize="20dp"
+            android:id="@+id/alarmClockMemorandumTextView"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text=""
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_below="@id/alarmClockMemorandumTextView"
+            android:id="@+id/alarmClockMemorandumEditText"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

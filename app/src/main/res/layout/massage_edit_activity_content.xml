@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/massageContactNameRelativeLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=" 联系人：  "
+            android:textSize="20dp"
+            android:id="@+id/massageContactNameTextView"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toRightOf="@id/massageContactNameTextView"
+            android:id="@+id/massageContactNameEditText"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/massageContactNameRelativeLayout"
+        android:id="@+id/massagePhoneNumberRelativeLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="电话号码："
+            android:textSize="20dp"
+            android:id="@+id/massagePhoneNumberTextView"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toRightOf="@id/massagePhoneNumberTextView"
+            android:id="@+id/massagePhoneNumberEditText"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/massagePhoneNumberRelativeLayout"
+        android:id="@+id/massageContentRelativeLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="短信内容："
+            android:textSize="20dp"
+            android:id="@+id/massageContentTextView"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text=""
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_below="@id/massageContentTextView"
+            android:id="@+id/massageContentEditText"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
